@@ -56,8 +56,8 @@ inquirer
   //after the input is recieved from the user we then use an arrow function to take that response and create a userRes variable where we will stringify the results and then wite them to the readme.md file using the fs
   .then((res) => {
     let userRes = JSON.stringify(res);
-    function touchReadme(userRes) {
-      console.log(userRes);
+    function touchReadme(res) {
+      console.log(res);
       //This is the boiler plate structure for the README.md file that will contain styling. The user input recieved is added to the areas marked with ${}
       return `# <${userRes.title}>
 
@@ -95,6 +95,6 @@ inquirer
       //Let the user know that it was successful.
       console.log("README successfully created!");
 
-      touchReadme();
+      //   touchReadme();
     });
   });
