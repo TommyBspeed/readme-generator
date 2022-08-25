@@ -32,7 +32,7 @@ inquirer
     },
     {
       type: "input",
-      message: "What are the contribution guidelines for your program?",
+      message: "Who are the contributors on your program?",
       name: "contribution",
     },
     {
@@ -53,46 +53,48 @@ inquirer
       choices: ["APM", "NPM", "Bower", "Greasy Fork", "none"],
     },
   ])
-  //after the input is recieved from the user we then use an arrow fucntion to take that response and create a userRes variable where we will stringify the results and then wite them to the readme.md file using the fs
+  //after the input is recieved from the user we then use an arrow function to take that response and create a userRes variable where we will stringify the results and then wite them to the readme.md file using the fs
   .then((res) => {
     let userRes = JSON.stringify(res);
-    fs.writeFile("README.md", userRes, (res) => {
-      function touchReadme(userRes) {
-        console.log(userRes);
-        //This is the boiler plate structure for the README.md file that will contain styling. The user input recieved is added to the areas marked with ${}
-        return `# <${userRes.title}>
+    function touchReadme(userRes) {
+      console.log(userRes);
+      //This is the boiler plate structure for the README.md file that will contain styling. The user input recieved is added to the areas marked with ${}
+      return `# <${userRes.title}>
 
-## Description
-${userRes.description}
-## Table of Contents
+    ## Description
+    ${userRes.description}
+    ## Table of Contents
 
-- [Installation](#installation)
-- [Usage](#usage)
-- [Contributions](#contributions)
-- [Tests](#tests)
-- [Questions](#questions)
-- [License](#license)
+    - [Installation](#installation)
+    - [Usage](#usage)
+    - [Contributions](#contributions)
+    - [Tests](#tests)
+    - [Questions](#questions)
+    - [License](#license)
 
-## Installation
-${userRes.install}
-## Usage
-${userRes.usage}
-## Contributions
-${userRes.contribution}
-## Tests
-${userRes.tests}
-## Questions
-For any Questions please contact me via GitHub or my Email listed below:
-${userRes.github}
-${userRes.email}
-## License
-${userRes.license}
-## Badges
+    ## Installation
+    ${userRes.install}
+    ## Usage
+    ${userRes.usage}
+    ## Contributions
+    ${userRes.contribution}
+    ## Tests
+    ${userRes.tests}
+    ## Questions
+    For any Questions please contact me via GitHub or my Email listed below:
+    ${userRes.github}
+    ${userRes.email}
+    ## License
+    ${userRes.license}
+    ## Badges
 
-`;
-      }
-      touchReadme();
+    `;
+    }
+    const stringData = touchReadme(res);
+    fs.writeFile("README.md", stringData, (res) => {
       //Let the user know that it was successful.
       console.log("README successfully created!");
+
+      touchReadme();
     });
   });
