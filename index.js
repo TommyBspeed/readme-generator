@@ -91,10 +91,8 @@ inquirer
     `;
     }
     const stringData = touchReadme(res);
-    fs.writeFile("README.md", stringData, (res) => {
+    fs.writeFile("newREADME.md", stringData, (res) => {
       //Let the user know that it was successful.
       console.log("README successfully created!");
-
-      //   touchReadme();
     });
   });
