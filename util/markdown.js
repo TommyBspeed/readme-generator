@@ -18,18 +18,24 @@ const generateMarkdown = (data) => {
 
     ## Installation
     ${data.install}
+
     ## Usage
     ${data.usage}
+
     ## Contributions
     ${data.contribution}
+
     ## Tests
     ${data.tests}
+
     ## Questions
     For any Questions please contact me via GitHub or my Email listed below:
     https://github.com/${data.github}
     ${data.email}
+
     ## License
     ${data.license}
+    
     ## Badges
 `;
 };

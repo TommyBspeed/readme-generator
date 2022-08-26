@@ -108,7 +108,7 @@ const questions = () => {
 
 // function to write README file using file system (fs)
 const writeFile = (data) => {
-  fs.writeFile("README.md", data, (err) => {
+  fs.writeFile("newREADME.md", data, (err) => {
     // if there is an error
     if (err) {
       console.log(err);
