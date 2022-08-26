@@ -4,7 +4,7 @@
 
 ## Description
 
-A professional README Generator that dynamically creates a read me file based on user input.
+A professional Readme generator to dynamiclly create a read me based off of user input using inquirer.
 
 ## Table of Contents
 
@@ -17,19 +17,19 @@ A professional README Generator that dynamically creates a read me file based on
 
 ## Installation
 
-Run node index.js in your terminal.
+run node.js in your console
 
 ## Usage
 
-Make sure you have node.js installed and are requiring the inquirer.
+make sure to have node installed and that you have required inquirer
 
 ## Contributions
 
-None.
+none
 
 ## Tests
 
-N/A
+n/a
 
 ## Questions
 

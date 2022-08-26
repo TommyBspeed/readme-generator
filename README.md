@@ -6,9 +6,9 @@
 
 This is a professional README Generator to dynamically create a markdown file for your project using input gathered from the user with an inquirer prompt.
 
-Below is a video demonstrating the usage of the app. Additionally, a link to the video can be found here: [Screencastify] (https://drive.google.com/file/d/1QYysEYgzoktpG03yZXpkz_PlQJnsSj2k/view)
+Below is a video demonstrating the usage of the app. Additionally, a link to the video can be found here: [Screencastify] (https://drive.google.com/file/d/1RqUTJPCWbb8ooLl7GfTvl1r8H0k9AVXx/view)
 
-![A gif showing the application in action.](<Assets/Images/Untitled_ Aug 26, 2022 3_20 PM.gif>)
+![A gif showing the application in action.](Assets/Images/readme-generator.gif)
 
 The link to the github repo can be found here: https://github.com/TommyBspeed/readme-generator
 
