@@ -11,13 +11,13 @@ const questions = () => {
   return inquirer.prompt([
     {
       type: "input",
-      message: "What is the title of your project?",
+      message: "What is the title of your program?",
       name: "title",
       validate: (nameInput) => {
         if (nameInput) {
           return true;
         } else {
-          console.log("Please enter the name of your Project!");
+          console.log("Please enter the name of your program!");
           return false;
         }
       },
@@ -43,7 +43,7 @@ const questions = () => {
         if (nameInput) {
           return true;
         } else {
-          console.log("Please enter install steps for your project!");
+          console.log("Please enter install steps for your program!");
           return false;
         }
       },
@@ -71,11 +71,31 @@ const questions = () => {
       message: "What are some tests that you have run on your program?",
       name: "tests",
     },
-    { type: "input", message: "What is your GitHub URL?", name: "github" },
+    {
+      type: "input",
+      message: "What is your GitHub username?",
+      name: "github",
+      validate: (nameInput) => {
+        if (nameInput) {
+          return true;
+        } else {
+          console.log("Please enter your GitHub username!");
+          return false;
+        }
+      },
+    },
     {
       type: "input",
       message: "What email address can someone contact you at?",
       name: "email",
+      validate: (nameInput) => {
+        if (nameInput) {
+          return true;
+        } else {
+          console.log("Please enter your email address!");
+          return false;
+        }
+      },
     },
     {
       type: "list",

@@ -1,8 +1,9 @@
-# a
-  ![Github licence](http://img.shields.io/badge/license-APM-success.svg)
+# README Generator
+  ![Github licence](http://img.shields.io/badge/license-none-success.svg)
 
     ## Description
-    a
+    This is a professional README Generator to dynamically create a markdown file for your project using input gathered from the user with an inquirer prompt.
+
     ## Table of Contents
 
     - [Installation](#installation)
@@ -13,15 +14,17 @@
     - [License](#license)
 
     ## Installation
-    a
+    Run the program with node.js and make sure you have an inquirer module.
     ## Usage
-    a
+    Use the node index.js call in your command line and answer the prompted questions.
     ## Contributions
-    a
+    node.js, inquirer
     ## Tests
-    a
+    N/A
     ## Questions
     For any Questions please contact me via GitHub or my Email listed below:
-    https://github.com/a
-    a
+    https://github.com/TommyBspeed
+    Tommy.Boileau@DU.EDU
+    ## License
+    none
     ## Badges
